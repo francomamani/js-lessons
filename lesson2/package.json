@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "lesson2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rxjs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node rxjs.js",
+    "dev": "nodemon rxjs.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

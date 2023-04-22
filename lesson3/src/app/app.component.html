@@ -1,0 +1,12 @@
+<form [formGroup]="form" (submit)="save()">
+  <label for="">FirstName</label><input type="text" formControlName="firstName">
+  <label for="">LastName</label><input type="text" formControlName="lastName">
+  <label for="">Age</label><input type="text" formControlName="age">
+  <div *ngIf="form.get('age')!!.invalid && (form.get('age')!!.dirty || form.get('age')!!.touched)">
+    <div *ngIf="form.get('age')!!.getError('pattern')">No cumple con los parametros</div>
+    <div *ngIf="form.get('age')!!.getError('required')">Es obligatorio</div>
+  </div>
+  <button [disabled]="form.invalid">Submit</button>
+</form>
+
+<router-outlet></router-outlet>
